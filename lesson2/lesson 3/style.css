@@ -1,0 +1,72 @@
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    background-color: #000; 
+    margin: 0;
+    overflow: hidden; 
+}
+
+
+.animated-text {
+    font-size: 5rem; 
+    font-family: sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 5px;
+
+    
+    position: absolute;
+    left: 0%;
+    opacity: 0;
+
+    
+    animation: 
+        fadeInUp 1s ease-out 0.5s forwards, 
+        moveRight 2s ease-in-out 1.5s forwards,
+        changeBackground 4s ease-out 3.5s forwards; 
+}
+
+
+
+
+
+@keyframes fadeInUp {
+    from {
+        transform: translateY(50px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+@keyframes moveRight {
+    from {
+        left: 0%;
+    }
+    to {
+        left: 50%; 
+        transform: translateX(-50%);
+    }
+}
+
+
+@keyframes changeBackground {
+    to {
+        
+        background-image: url("https://images.pexels.com/photos/1261728/pexels-photo-1261728.jpeg");
+        background-size: 200%; 
+        background-position: center;
+        
+        
+        background-clip: text;
+        -webkit-background-clip: text; 
+        
+        color: transparent; 
+    }
+}
+

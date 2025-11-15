@@ -7,7 +7,7 @@
 $dokon1 = array("brand" => "uzb shop", "cauntry" => "uzbekistan");
 $dokon1 += ["sity" => "xorazm", "point" => "karvak"  ];
 
-//Output the array:
+
 var_dump($dokon1);
 
 
@@ -23,7 +23,7 @@ krsort($dokon);
 foreach($dokon as $x => $x_value) {
   echo "dokon=" . $x . ", narx=" . $x_value;
   echo "<br>";
-}
+}*/
 
 //$dokon1 = array("brand" => "uzb shop", "cauntry" => "uzbekistan");
 //$dokon1 += ["sity" => "xorazm", "point" => "karvak"  ];

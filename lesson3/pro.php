@@ -1,19 +1,5 @@
 <?php
 
-//$a=[1,];
-
-
-
-//$ar=[1,2,4,66,8,9,0,1];
-//$arrr=[12,8,3,6,7,0];
-//$arr=[11,4,6,7];
-
-//echo $ar[0] . "<br>";
-
-//echo $arrr[1] . "<br>";
-
-//echo $arr[2] . "<br>";
-
 function tub ($a){
     $k=false;
     for($i=2; $i<=sqrt($a); $i++){
@@ -29,13 +15,14 @@ function tub ($a){
         return false;
     }
 }
-$n=10;
+$m=1000;
+$n=2000;
 $k=0;
 if($n==2){
     echo 1;
 }
 else{
-    for($i=2; $i<$n; $i++;){
+    for($i=$m; $i<=$n; $i++){
         if(tub($i)){
             $k++;
         }
@@ -44,7 +31,8 @@ else{
 }
 
 
-echo tub($a);
+
+
 
 
 ?>
